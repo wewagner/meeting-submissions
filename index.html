@@ -69,15 +69,8 @@
     </p>
 
     <!-- Replace ACTION with your form backend endpoint (e.g., Formspree URL) -->
-    <form name="meeting-submission"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field">
-
-  <!-- Netlify needs this hidden input to register the form -->
+   <form name="meeting-submission" method="POST" data-netlify="true" netlify-honeypot="bot-field">
   <input type="hidden" name="form-name" value="meeting-submission" />
-
-  <!-- Honeypot (spam trap) -->
   <p class="hp" aria-hidden="true">
     <label>Don’t fill this out: <input name="bot-field" /></label>
   </p>
@@ -119,3 +112,4 @@
   </main>
 </body>
 </html>
+
