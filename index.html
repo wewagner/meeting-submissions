@@ -7,12 +7,18 @@
   <style>
     :root { --max: 920px; }
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      margin: 0;
-      padding: 48px 16px;
-      background: #fafafa;
-      color: #111;
-    }
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 48px 16px;
+  color: #111;
+
+  background-color: #f3f4f6;              /* fallback color */
+  background-image: url("assets/background.svg");
+  background-size: cover;                  /* fills screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;            /* optional: subtle parallax */
+}
     main {
       max-width: var(--max);
       margin: 0 auto;
@@ -112,4 +118,5 @@
   </main>
 </body>
 </html>
+
 
